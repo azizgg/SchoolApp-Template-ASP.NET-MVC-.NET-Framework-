@@ -26,7 +26,7 @@
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Courses", "Index", "Courses", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Enrollments", "Create", "Enrollments", new { area = "" }, new { @class = "nav-link" })</li>
+
                     @{
                         if (Context.User.IsInRole("Admin"))
                         {
@@ -37,6 +37,7 @@
                         {
                             <li>@Html.ActionLink(User.Identity.Name, "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                             <li>@Html.ActionLink("logout", "logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Enrollments", "Create", "Enrollments", new { area = "" }, new { @class = "nav-link" })</li>
                         }
                         else
                         {
