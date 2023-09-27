@@ -7,7 +7,7 @@ database ERD:<br>
 
 This is a useful template to make a MVC web application that can manage students, instructors and courses, along with their enrollments.<br>
 
-Make sure to connect the database before running.<br>
+Make sure to connect the database before running. It's in orangewsdb.bacpac <br>
 
 Run on visual studio 2022.
 
