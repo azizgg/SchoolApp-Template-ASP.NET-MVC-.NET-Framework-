@@ -11,8 +11,11 @@ Make sure to connect the database before running. It's in orangewsdb.bacpac <br>
 
 Run on visual studio 2022.
 
-
-
+to use your database copy paste this connection string format (replace datbabase name and Servername) in the configs file:
+"ConnectionStrings": {
+  "DefaultConnection": "Servername;Database=Databasename;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;",
+  
+},
 
 
 
